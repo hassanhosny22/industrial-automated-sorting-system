@@ -1,72 +1,79 @@
-# Industrial Automated Sorting System
+#  Industrial Automated Sorting System
 
 ##  Project Overview
 
-A simulated industrial production line developed using **Siemens PLC Simulation, SIMATIC Manager, Ladder Logic, and Factory I/O**.
+An industrial automated sorting system developed and validated in a **simulated environment** using **Siemens PLC Simulation, SIMATIC Manager, Ladder Logic, and Factory I/O**.
 
-The system automatically detects and sorts three different product types based on their shapes and colors.
+The system automatically detects and sorts three different product types based on their shape and color.
 
-A sensor generates a different value for each product type. The value is stored in the PLC memory and compared with predefined values to identify the product. Based on the detected type, the corresponding sorting arm is activated to direct the product to its designated line.
+The detected sensor value is stored in PLC memory and compared with predefined values to identify the product type. The corresponding sorting mechanism is then activated to route the product to its designated line.
 
-##  Tools & Technologies
+##  Simulation Environment
 
 * Siemens PLC Simulation
 * SIMATIC Manager
-* Ladder Logic (LAD)
 * Factory I/O
-* Sensors & Product Detection
-* PLC Memory Operations
-* Value Comparison
-* Automated Sorting Arms
-* Counters
+* Ladder Logic (LAD)
 
-##  Control Features
+**Note:** This project was developed and tested using simulation software. No physical PLC was used.
 
-* Start / Stop
+##  Main Features
+
+* Automatic product detection
+* Product classification
+* Sensor value storage
+* Value comparison
+* Automatic sorting
+* Start / Stop control
 * Emergency Stop
 * Counter Reset
-* Three Individual Product Counters
-* Automatic / Manual Mode Selector
-* Product Detection & Classification
-* Automated Sorting
+* Individual product counters
+* Automatic / Manual mode
+
+##  System Operation
+
+1. A product enters the conveyor.
+2. Sensors detect the product.
+3. The sensor reading is stored in PLC memory.
+4. The stored value is compared with predefined values.
+5. The PLC identifies the product type.
+6. The corresponding sorting mechanism is activated.
+7. The product is routed to its designated line.
+8. The appropriate counter is incremented.
+
+##  Operating Modes
+
+### Automatic Mode
+
+The system automatically detects, identifies, and sorts the products.
 
 ### Manual Mode
 
-Manual mode allows the main conveyor to operate independently without activating the sorting arms.
-
-##  System Sequence
-
-1. The conveyor transports the product through the detection area.
-2. The sensor detects the product and generates a corresponding value.
-3. The detected value is stored in the PLC memory.
-4. The stored value is compared with predefined values.
-5. The PLC identifies the product type.
-6. The corresponding sorting arm is activated.
-7. The product is directed to its designated line.
-8. The corresponding product counter is incremented.
+The main conveyor can operate independently without activating the sorting mechanisms.
 
 ##  PLC Programming Concepts
 
-This project provided practical experience with:
+This project demonstrates practical use of:
 
-* Sensor-based detection
+* Digital sensors
 * Memory operations
-* Value comparison
+* Comparison instructions
 * Sequential control
 * Counters
-* Mode selection
+* Interlocking logic
+* Operating modes
 * Emergency stop logic
-* Industrial automation concepts
+* Industrial automation principles
 
 ##  Project Demonstration
 
 The project demonstration is available on LinkedIn:
 
-[Watch the Project on LinkedIn](https://www.linkedin.com/posts/hassan-hosny-shawky-8bab47304_industrialautomation-plc-factoryio-activity-7508597534244913152-PTaT)
+[Watch the Project Demonstration](https://www.linkedin.com/posts/hassan-hosny-shawky-8bab47304_industrialautomation-plc-factoryio-activity-7508597534244913152-PTaT)
 
-##  Simulation Environment
+##  Project Documentation
 
-The complete production line was simulated using **Factory I/O**, while the control logic was developed using **Siemens PLC Simulation and SIMATIC Manager**.
+Screenshots and additional project documentation can be added here.
 
 ##  Author
 
